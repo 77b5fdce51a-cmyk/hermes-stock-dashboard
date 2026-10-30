@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Korea Travel Apps</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #141a2e;
+      --border: #1f2940;
+      --accent: #ff4d6d;
+      --accent2: #ffd166;
+      --text: #e8ecf5;
+      --muted: #a8b0c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #1a2240, #0b1020 40%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+    }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 28px 18px 40px; }
+    h1 {
+      font-size: 22px;
+      margin: 0 0 6px;
+      color: #fff;
+    }
+    .sub { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--card), #0f1526);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 14px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .12s ease, border-color .2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+    .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+    .icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      background: #1a2240;
+    }
+    .name { font-weight: 600; font-size: 14px; color: #fff; }
+    .desc { font-size: 12px; color: var(--muted); line-height: 1.4; }
+    .row { margin-top: 22px; }
+    .row h2 { font-size: 14px; color: var(--muted); margin: 0 0 10px; text-transform: uppercase; letter-spacing: .08em; }
+    footer { margin-top: 24px; color: var(--muted); font-size: 12px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🇰🇷 Korea 2026 9–14 Nov</h1>
+    <div class="sub">5 คน · โคราช → ICN → โซล → สุวรรณภูมิ · สิงห^-ใบไม้ร่วง</div>
+
+    <div class="row">
+      <h2>แผนที่ / เดินทาง</h2>
+      <div class="grid">
+        <a class="card" href="https://naver.me" target="_blank" rel="noopener">
+          <div class="icon">🗺️</div>
+          <div class="name">Naver Map</div>
+          <div class="desc">ค้นหาเส้นทาง รถ bus รถไฟคุณภาพสูงในเกาหลี</div>
+        </a>
+        <a class="card" href="https://maps.google.com" target="_blank" rel="noopener">
+          <div class="icon">🌍</div>
+          <div class="name">Google Maps</div>
+          <div class="desc">แผนที่โลก เฝ้าสนับสนุน NFC ร้านstreet food</div>
+        </a>
+        <a class="card" href="https://www.kakaomobility.com/en/product/taxi" target="_blank" rel="noopener">
+          <div class="icon">🚕</div>
+          <div class="name">Kakao T</div>
+          <div class="desc">เรียกแท็กซี่ ดูราคา จ่ายผ่านแอพ</div>
+        </a>
+        <a class="card" href="https://www.seoulmetro.co.kr/en" target="_blank" rel="noopener">
+          <div class="icon">🚇</div>
+          <div class="name">서울지하철</div>
+          <div class="desc">ดูเส้นทางรถไฟใต้ดินโซล 日本語/English</div>
+        </a>
+        <a class="card" href="https://www.tskorea.com" target="_blank" rel="noopener">
+          <div class="icon">💳</div>
+          <div class="name">T‑money</div>
+          <div class="desc">บัตรเดินทาง ซื้อเติม จำ leave balance</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>อาหาร / จัดส่ง</h2>
+      <div class="grid">
+        <a class="card" href="https://www.yogiyo.co.kr" target="_blank" rel="noopener">
+          <div class="icon">🍗</div>
+          <div class="name">Yogiyo</div>
+          <div class="desc">สั่งไก่ทอด ชอบორგან za ส่งถึงที่พัก</div>
+        </a>
+        <a class="card" href="https://www.baemin.com" target="_blank" rel="noopener">
+          <div class="icon">🍱</div>
+          <div class="name">Baemin</div>
+          <div class="desc">แอพจัดส่งอาหารยอดนิยมในเกาหลี</div>
+        </a>
+        <a class="card" href="https://www.kakao.com" target="_blank" rel="noopener">
+          <div class="icon">💬</div>
+          <div class="name">KakaoTalk</div>
+          <div class="desc">แอพแชทหลัก ร้าน/แท็กซี่แจ้งเตือนที่นี่</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>แปลภาษา</h2>
+      <div class="grid">
+        <a class="card" href="https://papago.naver.com" target="_blank" rel="noopener">
+          <div class="icon">🔤</div>
+          <div class="name">Papago</div>
+          <div class="desc">แปล ไทย→เกาหลี ละเอียด ประโยคง่าย</div>
+        </a>
+        <a class="card" href="https://translate.google.com" target="_blank" rel="noopener">
+          <div class="icon">🌐</div>
+          <div class="name">Google Translate</div>
+          <div class="desc">แปลแบบ offline กล้อง realtime ดีเยี่ยม</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>ที่เที่ยว / ร้าน / ร่วม</h2>
+      <div class="grid">
+        <a class="card" href="https://www.klook.com" target="_blank" rel="noopener">
+          <div class="icon">🎟️</div>
+          <div class="name">Klook</div>
+          <div class="desc">จองตั๋วที่เที่ยว อาหาร ปราสาท ลดเยอะ</div>
+        </a>
+        <a class="card" href="https://www.mangoplate.com" target="_blank" rel="noopener">
+          <div class="icon">🍽️</div>
+          <div class="name">MangoPlate</div>
+          <div class="desc">รีวิวร้านอาหารเกาหลี แนะนำโดยคนจริง</div>
+        </a>
+        <a class="card" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <div class="icon">📸</div>
+          <div class="name">Instagram</div>
+          <div class="desc">หาที่ถ่ายรูป คาเฟ่สวย สาขา Starbucks</div>
+        </a>
+        <a class="card" href="https://www.airbnb.co.kr" target="_blank" rel="noopener">
+          <div class="icon">🏡</div>
+          <div class="name">Airbnb</div>
+          <div class="desc">ค้นที่พัก ลางาน house ห้องใกล้รถไฟฟ้า</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>อื่นๆ ที่ใช้จริง</h2>
+      <div class="grid">
+        <a class="card" href="https://www.weather.com" target="_blank" rel="noopener">
+          <div class="icon">🌤️</div>
+          <div class="name">Weather</div>
+          <div class="desc">เช็คอากาศโซล รายวัน/รายชั่วโมง</div>
+        </a>
+        <a class="card" href="https://www.xe.com" target="_blank" rel="noopener">
+          <div class="icon">💱</div>
+          <div class="name">Xe Currency</div>
+          <div class="desc">แลกเงินไทย→วอน ดูอัตราแลกเปลี่ยน</div>
+        </a>
+        <a class="card" href="https://www.rokps.or.kr" target="_blank" rel="noopener">
+          <div class="icon">🚌</div>
+          <div class="name">버스/지하철</div>
+          <div class="desc">ดูเวลา bus intercity ระหว่างเมือง</div>
+        </a>
+      </div>
+    </div>
+
+    <footer>สร้างรายชื่อสำหรับทริปเกาหลี 9–14 พ.ย. 2026 · 5 คน · โคราช → ICN → โซล → สุวรรณภูมิ</footer>
+  </div>
+</body>
+</html>

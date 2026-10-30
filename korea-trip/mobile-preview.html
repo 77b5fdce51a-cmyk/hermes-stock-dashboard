@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Korea Trip App Preview</title>
+<style>
+  :root {
+    --bg: #0f1525;
+    --card: #1a2238;
+    --border: #253049;
+    --accent: #ff5c72;
+    --accent2: #ffc857;
+    --text: #edf1fa;
+    --muted: #a8b4cc;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0;
+    background: radial-gradient(circle at top, #1b2540, #0b1020 55%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif;
+    min-height: 100vh;
+  }
+  .phone {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 22px 16px 28px;
+  }
+  .header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 18px;
+  }
+  .avatar {
+    width: 56px; height: 56px; border-radius: 16px;
+    background: linear-gradient(135deg, #ff8a6c, #ff3d6a);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    box-shadow: 0 10px 25px rgba(255, 92, 114, 0.25);
+  }
+  .title-area h1 {
+    margin: 0; font-size: 18px; color: #fff; letter-spacing: 0.3px;
+  }
+  .title-area p {
+    margin: 4px 0 0; font-size: 12px; color: var(--muted);
+  }
+  .countdown {
+    margin: 0 0 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .countdown .icon { font-size: 22px; }
+  .countdown .big { font-size: 22px; color: #fff; font-weight: 700; }
+  .countdown .label { font-size: 12px; color: var(--muted); }
+  .menu {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-bottom: 14px;
+  }
+  .menu-item {
+    background: linear-gradient(180deg, var(--card), #121b30);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 14px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    display: flex; flex-direction: column; gap: 8px; align-items: center;
+    transition: transform .12s ease;
+  }
+  .menu-item:active { transform: scale(0.98); }
+  .menu-item .icon {
+    width: 48px; height: 48px; border-radius: 14px;
+    background: #202d48;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .menu-item .name { font-weight: 600; font-size: 14px; color: #fff; }
+  .menu-item .desc { font-size: 11px; color: var(--muted); line-height: 1.35; }
+  .apps {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 14px;
+  }
+  .apps h3 {
+    margin: 0 0 10px;
+    font-size: 12px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.12em;
+  }
+  .app-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  }
+  .app-grid a {
+    text-decoration: none; color: var(--text);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+  }
+  .app-grid .icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: #202d48;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .app-grid .label { font-size: 11px; color: var(--muted); text-align: center; line-height: 1.2; }
+  .voice {
+    position: sticky; bottom: 12px;
+    background: linear-gradient(90deg, #ff5c72, #ff3d6a);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 18px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    font-size: 15px; font-weight: 600;
+    box-shadow: 0 14px 30px rgba(255, 61, 106, 0.35);
+    margin-top: 4px;
+  }
+  .row { display: flex; gap: 8px; }
+  .pill {
+    flex: 1;
+    background: #182036;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 10px 12px;
+    font-size: 12px; color: var(--muted);
+  }
+  .pill b { color: #fff; font-weight: 600; }
+  footer { margin-top: 18px; color: #6b7493; font-size: 11px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="header">
+      <div class="avatar">🇰🇷</div>
+      <div class="title-area">
+        <h1>Korea 2026 · 9–14 Nov</h1>
+        <p>5 คน · โคราช → ICN → โซล → สุวรรณภูมิ</p>
+      </div>
+    </div>
+
+    <div class="countdown">
+      <div class="icon">⏳</div>
+      <div>
+        <div class="big">10 วัน 15 ชม.</div>
+        <div class="label">อีกนิดเดียว就要ออกเดินทาง</div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <a class="menu-item" href="#">
+        <div class="icon">📅</div>
+        <div class="name">แผนแต่ละวัน</div>
+        <div class="desc">ดู行程 10–13 พ.ย. จัดเวลา + สถานที่</div>
+      </a>
+      <a class="menu-item" href="#">
+        <div class="icon">✅</div>
+        <div class="name">เช็คลิสต์</div>
+        <div class="desc">ของต้องเตรียม ยา เอกสาร ปลายทาง</div>
+      </a>
+      <a class="menu-item" href="#">
+        <div class="icon">💰</div>
+        <div class="name">บัญชี/ใบเสร็จ</div>
+        <div class="desc">เก็บค่าใช้จ่าย แบ่งกันกลุ่ม 5 คน</div>
+      </a>
+      <a class="menu-item" href="#">
+        <div class="icon">📞</div>
+        <div class="name">ติดต่อฉุกเฉิน</div>
+        <div class="desc">ที่พัก รถตู้ แรง hasta กรม崬Һติด</div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="pill">🧳 <b>น้ำหนักกระเป๋า</b> 15 กก. ละ</div>
+      <div class="pill">❄️ <b>อากาศ</b> 3–15°C</div>
+    </div>
+
+    <div class="apps" style="margin-top:12px;">
+      <h3>แอปที่ใช้จริง</h3>
+      <div class="app-grid">
+        <a href="https://naver.me" target="_blank" rel="noopener"><div class="icon">🗺️</div><div class="label">Naver Map</div></a>
+        <a href="https://papago.naver.com" target="_blank" rel="noopener"><div class="icon">🔤</div><div class="label">Papago</div></a>
+        <a href="https://www.kakaomobility.com/en/product/taxi" target="_blank" rel="noopener"><div class="icon">🚕</div><div class="label">Kakao T</div></a>
+        <a href="https://www.yogiyo.co.kr" target="_blank" rel="noopener"><div class="icon">🍗</div><div class="label">Yogiyo</div></a>
+        <a href="https://www.klook.com" target="_blank" rel="noopener"><div class="icon">🎟️</div><div class="label">Klook</div></a>
+        <a href="https://www.mangoplate.com" target="_blank" rel="noopener"><div class="icon">🍽️</div><div class="label">MangoPlate</div></a>
+        <a href="https://www.oliveyoung.com" target="_blank" rel="noopener"><div class="icon">🧴</div><div class="label">Olive Young</div></a>
+        <a href="https://www.airasia.com" target="_blank" rel="noopener"><div class="icon">✈️</div><div class="label">AirAsia</div></a>
+      </div>
+    </div>
+
+    <button class="voice">🎤 พูดสั่งงาน</button>
+
+    <footer>สร้างไว้ใช้ส่วนตัว · ทริปเกาหลี 9–14 พ.ย. 2026</footer>
+  </div>
+</body>
+</html>
